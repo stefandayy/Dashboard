@@ -1,0 +1,48 @@
+.side{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    background-color: #141414;
+    width: 75px;
+}
+
+
+
+.side .nav-link{
+    color:white;
+    font-size: 15px;
+}
+
+.side .nav-link b{
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+.main-icons{
+    position: absolute;
+    top:5%;
+    bottom:50%;
+   
+}
+
+.user-icons{
+    position: absolute;
+    bottom:0;
+   
+}
+
+.main-icons .nav-link{
+    box-sizing: border-box;
+    padding: 5px auto;
+}
+
+.main-icons .nav-link:focus{
+    border-left: 3px solid white;
+    color: white;
+}
+
+.side .nav-link:hover{
+    color: white;
+}

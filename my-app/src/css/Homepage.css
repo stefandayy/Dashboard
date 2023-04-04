@@ -1,0 +1,18 @@
+#home{
+    height: 105vh; 
+    width: 100%;
+    margin: 0;  
+}
+
+#home .left{
+    padding-left: 110px;
+    background-color: #7691b0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#home .right{
+    background-color: #91a7bf;
+    
+}

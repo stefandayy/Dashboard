@@ -1,0 +1,70 @@
+{
+  "user1": {
+    "id": 1,
+    "name": "Stefan",
+    "lastname": "May",
+    "balance": 146000,
+    "unTransaction": 1240,
+    "empWork": 127,
+    "spending": 3900,
+    "nClient": 26,
+    "overdue": 6,
+    "emails": [
+      {
+        "user": "Emma Smith",
+        "title": "Welcome to our service",
+        "date": "2022-03-15",
+        "email": "john.doe@example.com"
+      },
+      {
+        "user": "Matt Leory",
+        "title": "Your account has been updated",
+        "date": "2022-03-28",
+        "email": "john.doe@example.com"
+      },
+      {
+        "user": "Tim Man",
+        "title": "Your account has been updated",
+        "date": "2022-03-28",
+        "email": "john.doe@example.com"
+      },
+      {
+        "user": "George Cal",
+        "title": "Your account has been updated",
+        "date": "2022-03-28",
+        "email": "john.doe@example.com"
+      },
+      {  "user": "Stefan Day",
+        "title": "New product launch",
+        "date": "2022-04-01",
+        "email": "john.doe@example.com"
+      },
+      {
+        "user": "Dan Ten",
+        "title": "Special offer for loyal customers",
+        "date": "2022-04-03",
+        "email": "john.doe@example.com"
+      }
+    ],
+    "todo_items": [
+      {
+        "title": "Buy groceries",
+        "description": "Milk, bread, eggs, cheese",
+        "due_date": "2022-04-01",
+        "completed": false
+      },
+      {
+        "title": "Finish project proposal",
+        "description": "Write up proposal for new project",
+        "due_date": "2022-04-10",
+        "completed": false
+      },
+      {
+        "title": "Call doctor",
+        "description": "Schedule appointment for check-up",
+        "due_date": "2022-04-15",
+        "completed": false
+      }
+    ]
+  }
+}
