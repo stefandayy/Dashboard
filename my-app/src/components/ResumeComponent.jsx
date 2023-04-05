@@ -4,7 +4,6 @@ import {
   Col,
   Container,
   OverlayTrigger,
-  Popover,
   ProgressBar,
   Row,
   Tooltip,
@@ -16,7 +15,7 @@ import { SlOptionsVertical } from "react-icons/sl";
 import NewClientCard from "./NewClientCard";
 const ResumeComponent = ({ data }) => {
 
-  const popover = (
+  const tooltip = (
     <Tooltip className="mx-2" style={{backgroundColor:"black", opacity:"1", borderRadius:"10px"}}>
       
         <h4 className="text-white">Formation Status</h4>
@@ -50,7 +49,7 @@ const ResumeComponent = ({ data }) => {
           </p>
         </Col>
         <Col>
-        <OverlayTrigger trigger="click" placement="auto" overlay={popover}>
+        <OverlayTrigger trigger="click" placement="auto" overlay={tooltip}>
           <Button
             className="rounded-circle d-inline float-end"
             size="sm"
