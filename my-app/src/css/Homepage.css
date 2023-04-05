@@ -1,18 +1,33 @@
+
+@font-face {
+    font-family: "Kamerik";
+    src: url('../fonts/Kamerik105-Book.ttf');
+}
+
 #home{
-    height: 105vh; 
-    width: 100%;
-    margin: 0;  
+    height: 100vh; 
+    font-family: 'Kamerik', sans-serif;
+    color: black;
+    
 }
 
 #home .left{
-    padding-left: 80px;
-    background-color: #7691b0;
-    display: flex;
-    justify-content: center;
-    
+    padding-left: 100px;
+    background-color: #D0E1E9;
 }
 
 #home .right{
-    background-color: #91a7bf;
+    background-color: #DFECF2;
     
+}
+
+.section{
+    margin: 20px 10px;
+    padding: 20px 0;
+    
+}
+
+.section:hover{
+    background-color: #DFECF2;
+    border-radius: 10px;
 }

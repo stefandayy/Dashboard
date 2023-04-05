@@ -1,23 +1,24 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 
-
-const NewClientCard = ({data}) => {
+const NewClientCard = ({ data }) => {
   return (
-    <Row className= "gx-2 my-5 p-4  " style={{maxWidth:"50rem",backgroundColor:"#91a7bf",borderRadius:"10px"}}>
-      <Col >
-        <div>
-          <h2>New Clients</h2> <br />
+    <Card
+      className="p-2 section"
+      style={{ maxWidth: "25rem", backgroundColor: "#DFECF2",borderColor:"transparent" }}
+    >
+      <Row>
+        <Col>
+          <h5>New Clients</h5> <br />
           <h2>{data.user1.nClient}</h2>
-        </div>
-      </Col>
-      <Col>
-        <div>
-          <h2>Invoices overdue</h2><br />
+        </Col>
+        <Col>
+          <h5>Invoices overdue</h5>
+          <br />
           <h2>{data.user1.overdue}</h2>
-        </div>
-      </Col>
-    </Row>
+        </Col>
+      </Row>
+    </Card>
   );
 };
 

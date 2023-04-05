@@ -5,13 +5,13 @@ import RecentMailComponent from "../components/RecentMailComponent";
 import { Col, Row } from "react-bootstrap";
 import ToDoListComponent from "../components/ToDoListComponent";
 import ChartComponent from "../components/ChartComponent";
-const HomePage = ({data}) => {
+const HomePage = ({ data }) => {
   return (
     <Row id="home">
-      <Col className="left" xs={12} md={12} lg={5}>
+      <Col className="left" xs={12} md={12} lg={4}>
         <ResumeComponent data={data} />
       </Col>
-      <Col className="right" xs={12} md={12} lg={7}>
+      <Col className="right" xs={12} md={12} lg={8}>
         <ChartComponent />
         <RecentMailComponent data={data} />
         <ToDoListComponent data={data} />

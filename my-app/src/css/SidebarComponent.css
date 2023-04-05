@@ -1,48 +1,46 @@
-.side{
-    position: fixed;
-    top:0;
-    bottom:0;
-    left: 0;
-    background-color: #141414;
-    width: 75px;
+.side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 80px;
+}
+
+.side .nav-link {
+  color: white;
+  font-size: 20px;
+  padding-left: 25px;
 }
 
 
-
-.side .nav-link{
-    color:white;
-    font-size: 16px;
+.side .nav-item b {
+  font-size: 15px;
+  position: absolute;
+  top: 2%;
+  left: 18%;
+}
+.main-icons {
+  position: absolute;
+  top: 5%;
+  bottom: 30%;
 }
 
-.side .nav-link b{
-    font-size: 15px;
-    position: absolute;
-    top: 0;
-    left: 10%;
-}
-.main-icons{
-    position: absolute;
-    top:5%;
-    bottom:50%;
-   
+.user-icons {
+  position: fixed;
+  bottom: 0;
 }
 
-.user-icons{
-    position: absolute;
-    bottom:0;
-   
+.main-icons .nav-link:focus,
+.user-icons .nav-link:focus {
+  color: white;
 }
 
-.main-icons .nav-link{
-    box-sizing: border-box;
-    padding: 5px auto;
+.side .nav-link:hover,
+.nav-link:focus {
+  color: white;
 }
 
-.main-icons .nav-link:focus{
-    border-left: 3px solid white;
-    color: white;
-}
-
-.side .nav-link:hover{
-    color: white;
+.active {
+  border-left: 3px solid white;
 }
