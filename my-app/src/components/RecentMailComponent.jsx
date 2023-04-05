@@ -13,15 +13,14 @@ const RecentMailComponent = ({ data }) => {
                 <AiOutlineUser />
               </td>
               <td>
-                <b>{email.user} </b>{" "}
+                <b>{email.user} </b>
               </td>
               <td>
-                {" "}
-                <b>{email.title}</b>{" "}
+                
+                <b>{email.title}</b>
               </td>
               <td>
-                {" "}
-                <b>{email.date}</b>{" "}
+                <b>{email.date}</b>
               </td>
             </tr>
           ))}

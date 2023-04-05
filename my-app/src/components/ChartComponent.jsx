@@ -12,44 +12,44 @@ import {
 const data = [
   {
     name: "14 February",
-    uv: 3000,
-    pv: 1398,
+    currentWeek: 3000,
+    previousWeek: 1398,
     amt: 2210,
   },
   {
     name: "15 February",
-    uv: 2000,
-    pv: 9800,
+    currentWeek: 2000,
+    previousWeek: 9800,
     amt: 2290,
   },
   {
     name: "16 February",
-    uv: 2780,
-    pv: 3908,
+    currentWeek: 2780,
+    previousWeek: 3908,
     amt: 2000,
   },
   {
     name: "17 February",
-    uv: 1890,
-    pv: 4800,
+    currentWeek: 1890,
+    previousWeek: 4800,
     amt: 2181,
   },
   {
     name: "18 February",
-    uv: 2390,
-    pv: 3800,
+    currentWeek: 2390,
+    previousWeek: 3800,
     amt: 2500,
   },
   {
     name: "19 February",
-    uv: 3490,
-    pv: 4300,
+    currentWeek: 3490,
+    previousWeek: 4300,
     amt: 2100,
   },
   {
     name: "20 February",
-    uv: 6490,
-    pv: 4300,
+    currentWeek: 6490,
+    previousWeek: 4300,
     amt: 2100,
   },
 ];
@@ -80,11 +80,11 @@ const ChartComponent = () => {
           <Tooltip separator=": $" />
           <Line
             type="natural"
-            dataKey="pv"
+            dataKey="currentWeek"
             stroke="#3e5a7a"
             activeDot={{ r: 8 }}
           />
-          <Line type="natural" dataKey="uv" stroke="#000000"  activeDot={{ r: 8 }} />
+          <Line type="natural" dataKey="previousWeek" stroke="#000000"  activeDot={{ r: 8 }} />
         </LineChart>
       </ResponsiveContainer>
     </>

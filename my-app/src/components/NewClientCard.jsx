@@ -4,17 +4,17 @@ import { Col, Row } from "react-bootstrap";
 
 const NewClientCard = ({data}) => {
   return (
-    <Row className= "g-0 my-5 p-1  " style={{maxWidth:"18rem",backgroundColor:"#91a7bf",borderRadius:"10px"}}>
+    <Row className= "gx-2 my-5 p-4  " style={{maxWidth:"50rem",backgroundColor:"#91a7bf",borderRadius:"10px"}}>
       <Col >
         <div>
-          <b>New Client</b> <br />
-          <h5>{data.user1.nClient}</h5>
+          <h2>New Clients</h2> <br />
+          <h2>{data.user1.nClient}</h2>
         </div>
       </Col>
       <Col>
         <div>
-          <b>Invoices overdue</b> <br />
-          <h5>{data.user1.overdue}</h5>
+          <h2>Invoices overdue</h2><br />
+          <h2>{data.user1.overdue}</h2>
         </div>
       </Col>
     </Row>
