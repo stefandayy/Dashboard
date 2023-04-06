@@ -21,7 +21,7 @@ const ToDoListComponent = ({ data }) => {
             overlay={
 
               <Tooltip style={{ backgroundColor: "black", opacity: "1", borderRadius: "10px" }}>
-                <p>{item.description}</p>
+                {item.description}
               </Tooltip>
 
             }
