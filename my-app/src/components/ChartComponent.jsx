@@ -9,8 +9,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-
-const ChartComponent = ({data}) => {
+const ChartComponent = ({ data }) => {
   return (
     <>
       <div className="d-flex  justify-content-between align-items-baseline py-3">
@@ -33,7 +32,13 @@ const ChartComponent = ({data}) => {
           <CartesianGrid opacity={0.2} stroke="#141414" vertical={false} />
           <XAxis dataKey="name" tickCount={3} />
           <YAxis />
-          <Tooltip separator=": $" contentStyle={{backgroundColor:"black", color:"white"}} />
+          <Tooltip
+            separator=": $"
+            contentStyle={{
+              backgroundColor: "black",
+              color: "white",
+            }}
+          />
           <Line
             type="natural"
             dataKey="currentWeek"

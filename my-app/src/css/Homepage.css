@@ -1,37 +1,34 @@
-
 @font-face {
-    font-family: "Aeonik";
-    src: url('../fonts/AeonikTRIAL-Regular.otf');
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Regular.otf");
 }
 
-#home{
-    height: 100vh;
-    font-family: 'Aeonik', sans-serif;
-    color: black;
+#home {
+  height: 100vh;
+  font-family: "Aeonik", sans-serif;
+  color: black;
 }
 
-#home .left{
-    padding-left: 95px;
-    background-color: #D0E1E9;
+#home .left {
+  padding-left: 95px;
+  background-color: #d0e1e9;
 }
 
-#home .right{
-    background-color: #DFECF2;
+#home .right {
+  background-color: #dfecf2;
 }
 
-.section{
-    margin: 20px 0;
-    padding: 20px 0;
-    
+.section {
+  margin: 20px 0;
+  padding: 20px 0;
 }
 
-.section:hover{
-    background-color: #DFECF2;
-    border-radius: 10px;
+.section:hover {
+  background-color: #dfecf2;
+  border-radius: 10px;
 }
 
 .section .pButton {
-    background-color: black;
-    border-color: transparent;
+  background-color: black;
+  border-color: transparent;
 }
-

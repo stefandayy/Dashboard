@@ -46,7 +46,6 @@ const SidebarComponent = () => {
               <b>Dappr</b>
             </NavItem>
 
-
             {/* Icons - Link */}
             <div className="main-icons">
               <NavItem>

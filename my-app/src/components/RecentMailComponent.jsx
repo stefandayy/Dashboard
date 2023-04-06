@@ -4,12 +4,12 @@ import { AiOutlineUser } from "react-icons/ai";
 const RecentMailComponent = ({ data }) => {
   return (
     <>
-      <h1>Recent Mails</h1>
+      <h1>Recent emails</h1>
       <Table>
         <tbody>
           {data.user1.emails
-            .map((email,index) => (
-              <tr key={index+1}> 
+            .map((email, index) => (
+              <tr key={index + 1}>
                 <td>
                   <AiOutlineUser />
                 </td>

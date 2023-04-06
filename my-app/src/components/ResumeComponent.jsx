@@ -49,7 +49,6 @@ const ResumeComponent = ({ data }) => {
         dollar="$"
       />
 
-
       <ResumeSectionComponent
         icon={<AiOutlinePieChart size={"40px"} />}
         data={data.user1.unTransaction}
