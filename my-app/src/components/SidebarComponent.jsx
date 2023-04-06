@@ -25,7 +25,6 @@ const SidebarComponent = () => {
 
   return (
     <div className="menu">
-
       <Button variant="dark" className="d-lg-none m-2 " onClick={handleShow}>
         <AiOutlineMenu />
       </Button>
@@ -44,23 +43,20 @@ const SidebarComponent = () => {
         <Offcanvas.Body>
           <Nav className="side flex-column">
             <NavItem className="py-5 px-2">
-              
-                <b>Dappr</b>
-              
+              <b>Dappr</b>
             </NavItem>
 
+
+            {/* Icons - Link */}
             <div className="main-icons">
               <NavItem>
-                <NavLink  to="/" className="nav-link">
+                <NavLink to="/" className="nav-link">
                   <AiOutlineHome />
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink
-                  to="/graph"
-                  className="nav-link"
-                >
+                <NavLink to="/graph" className="nav-link">
                   <VscGraph />
                 </NavLink>
               </NavItem>
