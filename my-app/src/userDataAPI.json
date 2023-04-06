@@ -34,7 +34,8 @@
         "date": "2022-03-28",
         "email": "john.doe@example.com"
       },
-      {  "user": "Stefan Day",
+      {
+        "user": "Stefan Day",
         "title": "New product launch",
         "date": "2022-04-01",
         "email": "john.doe@example.com"
@@ -64,6 +65,43 @@
         "description": "Schedule appointment for check-up",
         "due_date": "2022-04-15",
         "completed": false
+      }
+    ],
+    "chartData":[
+      {
+        "name": "14 February",
+        "currentWeek": 3000,
+        "previousWeek": 1398
+      },
+      {
+        "name": "15 February",
+        "currentWeek": 2000,
+        "previousWeek": 4000
+      },
+      {
+        "name": "16 February",
+        "currentWeek": 2780,
+        "previousWeek": 3908
+      },
+      {
+        "name": "17 February",
+        "currentWeek": 1890,
+        "previousWeek": 4800
+      },
+      {
+        "name": "18 February",
+        "currentWeek": 2390,
+        "previousWeek": 3800
+      },
+      {
+        "name": "19 February",
+        "currentWeek": 3490,
+        "previousWeek": 4300
+      },
+      {
+        "name": "20 February",
+        "currentWeek": 5490,
+        "previousWeek": 4300
       }
     ]
   }

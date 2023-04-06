@@ -5,6 +5,7 @@ import RecentMailComponent from "../components/RecentMailComponent";
 import { Col, Row } from "react-bootstrap";
 import ToDoListComponent from "../components/ToDoListComponent";
 import ChartComponent from "../components/ChartComponent";
+
 const HomePage = ({ data }) => {
   return (
     <Row id="home">
@@ -12,7 +13,7 @@ const HomePage = ({ data }) => {
         <ResumeComponent data={data} />
       </Col>
       <Col className="right" xs={12} md={12} lg={8}>
-        <ChartComponent />
+        <ChartComponent data={data} />
         <RecentMailComponent data={data} />
         <ToDoListComponent data={data} />
       </Col>

@@ -1,133 +1,75 @@
 import React from "react";
-import {
-  Button,
-  Col,
-  Container,
-  OverlayTrigger,
-  ProgressBar,
-  Row,
-  Tooltip,
-} from "react-bootstrap";
+import { Button, Container, ProgressBar, Tooltip } from "react-bootstrap";
 import { AiOutlinePieChart, AiOutlineWallet } from "react-icons/ai";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { GiPayMoney } from "react-icons/gi";
-import { SlOptionsVertical } from "react-icons/sl";
-import NewClientCard from "./NewClientCard";
-const ResumeComponent = ({ data }) => {
 
+import NewClientCard from "./NewClientCard";
+import ResumeSectionComponent from "./ResumeSectionComponent";
+const ResumeComponent = ({ data }) => {
   const tooltip = (
-    <Tooltip className="mx-2" style={{backgroundColor:"black", opacity:"1", borderRadius:"10px"}}>
-      
-        <h4 className="text-white">Formation Status</h4>
-        <p className="text-white">In progress</p>
-        <ProgressBar variant="primary" now={60} />
-        <div className="text-center">
-          <p className="text-white">
-            <b>Estimated processing </b> <br />
-            4-5 business days
-          </p>
-          <Button variant="light"> <b>View status</b> </Button>
-        </div>
-      
+    <Tooltip
+      className="m-2"
+      style={{ backgroundColor: "black", opacity: "1", borderRadius: "10px" }}
+    >
+      <h4 className="text-white">Formation Status</h4>
+      <p className="text-white">In progress</p>
+      <ProgressBar variant="primary" now={60} />
+      <div className="text-center">
+        <p className="text-white">
+          <b>Estimated processing </b> <br />
+          4-5 business days
+        </p>
+        <Button variant="light">
+          {" "}
+          <b>View status</b>{" "}
+        </Button>
+      </div>
     </Tooltip>
   );
 
+  const tooltip2 = (
+    <Tooltip
+      className="m-2"
+      style={{ backgroundColor: "black", opacity: "1", borderRadius: "10px" }}
+    >
+      <b className="text-white">Working progress...</b>
+    </Tooltip>
+  );
 
   return (
-    <Container >
-      <h1 className="py-5">Good morning, {data.user1.name}!</h1>
+    <Container>
+      <h1 className="py-3">Good morning, {data.user1.name}!</h1>
 
-      <Row className="section" style={{maxWidth:"18rem"}}>
-        <Col xs="auto">
-          <AiOutlineWallet size={"40px"} />
-        </Col>
-        <Col xs="auto">
-          <h2>${data.user1.balance}</h2>
-          <p>
-            Your bank<br />
-            balance
-          </p>
-        </Col>
-        <Col>
-        <OverlayTrigger trigger="click" placement="auto" overlay={tooltip}>
-          <Button
-            className="rounded-circle d-inline float-end"
-            size="sm"
-            variant="dark"
-          >
-            <SlOptionsVertical />
-          </Button>
-        </OverlayTrigger>
-        </Col>
-        </Row>
+      <ResumeSectionComponent
+        icon={<AiOutlineWallet size={"40px"} />}
+        data={data.user1.balance}
+        text={"Your bank balance"}
+        tooltip={tooltip}
+        dollar="$"
+      />
 
-      <Row className="section" style={{maxWidth:"18rem"}}>
-        <Col xs="auto">
-          <AiOutlinePieChart size={"40px"} />
-        </Col>
-        <Col xs="auto">
-          <h2>{data.user1.unTransaction}</h2>
-          <p>
-            Uncategorized <br />
-            transaction
-          </p>
-        </Col>
-        <Col>
-          <Button
-            className="rounded-circle d-inline float-end"
-            size="sm"
-            variant="dark"
-           
-          >
-            <SlOptionsVertical />
-          </Button>
-        </Col>
-        </Row>
+      <ResumeSectionComponent
+        icon={<AiOutlinePieChart size={"40px"} />}
+        data={data.user1.unTransaction}
+        text={"Uncategorized transaction"}
+        tooltip={tooltip2}
+      />
 
-      <Row className="section" style={{maxWidth:"18rem"}}>
-        <Col xs="auto">
-          <BsPersonWorkspace size={"40px"} />
-        </Col>
-        <Col xs="auto">
-          <h2>{data.user1.empWork}</h2>
-          <p>
-            Employees <br />
-            working today
-          </p>
-        </Col>
-        <Col>
-          <Button
-            className="rounded-circle d-inline float-end"
-            size="sm"
-            variant="dark"
-          >
-            <SlOptionsVertical />
-          </Button>
-        </Col>
-        </Row>
+      <ResumeSectionComponent
+        icon={<BsPersonWorkspace size={"40px"} />}
+        data={data.user1.empWork}
+        text={"Employees working today"}
+        tooltip={tooltip2}
+      />
 
-      <Row className="section" style={{maxWidth:"18rem"}}>
-        <Col xs="auto">
-          <GiPayMoney size={"40px"} />
-        </Col>
-        <Col xs="auto">
-          <h2>${data.user1.spending}</h2>
-          <p>
-            This week's card <br />
-            spending
-          </p>
-        </Col>
-        <Col>
-          <Button
-            className="rounded-circle d-inline float-end"
-            size="sm"
-            variant="dark"
-          >
-            <SlOptionsVertical />
-          </Button>
-        </Col>
-      </Row>
-
+      <ResumeSectionComponent
+        icon={<GiPayMoney size={"40px"} />}
+        data={data.user1.spending}
+        text={"This week's card spending"}
+        tooltip={tooltip2}
+        dollar="$"
+      />
 
       <NewClientCard data={data} />
     </Container>

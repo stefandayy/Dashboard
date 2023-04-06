@@ -24,9 +24,9 @@ const SidebarComponent = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <div style={{ backgroundColor: "#D0E1E9" }}>
+    <div className="menu">
 
-      <Button variant="dark" className="d-lg-none m-2" onClick={handleShow}>
+      <Button variant="dark" className="d-lg-none m-2 " onClick={handleShow}>
         <AiOutlineMenu />
       </Button>
 
@@ -58,7 +58,7 @@ const SidebarComponent = () => {
 
               <NavItem>
                 <NavLink
-                  to="/hello"
+                  to="/graph"
                   className="nav-link"
                 >
                   <VscGraph />

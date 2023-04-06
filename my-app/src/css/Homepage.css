@@ -5,10 +5,9 @@
 }
 
 #home{
-    height: 100vh; 
+    height: 100vh;
     font-family: 'Kamerik', sans-serif;
     color: black;
-    
 }
 
 #home .left{
@@ -18,11 +17,10 @@
 
 #home .right{
     background-color: #DFECF2;
-    
 }
 
 .section{
-    margin: 20px 10px;
+    margin: 20px 0;
     padding: 20px 0;
     
 }
@@ -31,3 +29,9 @@
     background-color: #DFECF2;
     border-radius: 10px;
 }
+
+.section .pButton {
+    background-color: black;
+    border-color: transparent;
+}
+

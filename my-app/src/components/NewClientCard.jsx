@@ -9,11 +9,11 @@ const NewClientCard = ({ data }) => {
     >
       <Row>
         <Col>
-          <h5>New Clients</h5> <br />
+          <b>New Clients</b> <br />
           <h2>{data.user1.nClient}</h2>
         </Col>
         <Col>
-          <h5>Invoices overdue</h5>
+          <b>Invoices overdue</b>
           <br />
           <h2>{data.user1.overdue}</h2>
         </Col>

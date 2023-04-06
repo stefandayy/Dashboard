@@ -1,3 +1,10 @@
+
+.menu{
+  position: absolute;
+  top:2%;
+  
+}
+
 .side {
   position: fixed;
   top: 0;
@@ -7,19 +14,24 @@
   width: 80px;
 }
 
+.side .nav-item b {
+  font-size: 15px;
+  position: absolute;
+  top: 1%;
+  left: 18%;
+}
+
 .side .nav-link {
   color: white;
   font-size: 20px;
   padding-left: 25px;
 }
 
-
-.side .nav-item b {
-  font-size: 15px;
-  position: absolute;
-  top: 2%;
-  left: 18%;
+.side .nav-link:hover,
+.nav-link:focus {
+  color: white;
 }
+
 .main-icons {
   position: absolute;
   top: 5%;
@@ -36,11 +48,7 @@
   color: white;
 }
 
-.side .nav-link:hover,
-.nav-link:focus {
-  color: white;
-}
-
 .active {
   border-left: 3px solid white;
 }
+

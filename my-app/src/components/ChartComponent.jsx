@@ -9,48 +9,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  {
-    name: "14 February",
-    currentWeek: 3000,
-    previousWeek: 1398,
-  },
-  {
-    name: "15 February",
-    currentWeek: 2000,
-    previousWeek: 4000,
-  },
-  {
-    name: "16 February",
-    currentWeek: 2780,
-    previousWeek: 3908,
-  },
-  {
-    name: "17 February",
-    currentWeek: 1890,
-    previousWeek: 4800,
-  },
-  {
-    name: "18 February",
-    currentWeek: 2390,
-    previousWeek: 3800,
-  },
-  {
-    name: "19 February",
-    currentWeek: 3490,
-    previousWeek: 4300,
-  },
-  {
-    name: "20 February",
-    currentWeek: 5490,
-    previousWeek: 4300,
-  },
-];
 
-const ChartComponent = () => {
+const ChartComponent = ({data}) => {
   return (
     <>
-      <div className="d-flex  justify-content-between align-items-baseline">
+      <div className="d-flex  justify-content-between align-items-baseline py-3">
         <b style={{ fontSize: "30px" }}>Revenue</b>{" "}
         <p>Last 7 days VS prior week</p>
       </div>
@@ -59,11 +22,11 @@ const ChartComponent = () => {
         <LineChart
           width={500}
           height={300}
-          data={data}
+          data={data.user1.chartData}
           margin={{
             top: 20,
             right: 10,
-            left: 10,
+            left: 0,
             bottom: 5,
           }}
         >
