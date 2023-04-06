@@ -4,7 +4,7 @@ import { Card, Col, Row } from "react-bootstrap";
 const NewClientCard = ({ data }) => {
   return (
     <Card
-      className="p-2 section"
+      className="ml-3 p-2 section"
       style={{ maxWidth: "25rem", backgroundColor: "#DFECF2",borderColor:"transparent" }}
     >
       <Row>
