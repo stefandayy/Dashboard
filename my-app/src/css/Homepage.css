@@ -1,12 +1,12 @@
 
 @font-face {
-    font-family: "Kamerik";
-    src: url('../fonts/Kamerik105-Book.ttf');
+    font-family: "Aeonik";
+    src: url('../fonts/AeonikTRIAL-Regular.otf');
 }
 
 #home{
     height: 100vh;
-    font-family: 'Kamerik', sans-serif;
+    font-family: 'Aeonik', sans-serif;
     color: black;
 }
 
