@@ -4,7 +4,7 @@ import { AiOutlineUser } from "react-icons/ai";
 const RecentMailComponent = ({ data }) => {
   return (
     <>
-      <h1>Recent emails</h1>
+      <b style={{fontSize:"30px"}}>Recent emails</b>
       <Table>
         <tbody>
           {data.user1.emails

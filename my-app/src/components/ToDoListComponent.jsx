@@ -12,7 +12,7 @@ import { AiOutlineFileText } from "react-icons/ai";
 const ToDoListComponent = ({ data }) => {
   return (
     <>
-      <h1>Your do-Do list</h1>
+      <b style={{fontSize:"30px"}}>Your to-Do list</b>
       <Container className="mt-3 d-flex justify-content-between">
         {data.user1.todo_items.map((item, index) => (
           <OverlayTrigger

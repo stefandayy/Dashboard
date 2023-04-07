@@ -30,7 +30,7 @@ const SidebarComponent = () => {
       </Button>
 
       <Offcanvas
-        style={{ width: "7rem", backgroundColor: "black", color: "white" }}
+        style={{ width: "8rem", backgroundColor: "black", color: "white" }}
         show={show}
         onHide={handleClose}
         responsive="lg"
@@ -38,7 +38,7 @@ const SidebarComponent = () => {
         backdrop={false}
       >
         <Offcanvas.Header closeButton closeVariant="white">
-          <Offcanvas.Title>Dappr</Offcanvas.Title>
+          <Offcanvas.Title></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="side flex-column">
