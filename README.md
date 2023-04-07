@@ -6,7 +6,7 @@
 <br/>
 È presente una sidebar che ci permette di navigare fra le varie pagine tramite react-router-dom mantenendo il principio di single page application, inoltre la sidebar diventa un offcanvas nei dispositivi non large.
 <br/>
-I dati presenti nell'homepage sono stati integrati tramite props da un unico file json. Poi abbiamo un grafico sviluppato con Recharts che  rappresenta un mock del confronto dei redditi della settimana attuale e di quella precedente. Interagendo coi buttons/badges è possibile vedere nel dettaglio di ciascuna sezione della resume e di ogni task della to-Do list.
+I dati presenti nell'homepage sono stati integrati tramite props da un unico file json. Poi abbiamo un grafico sviluppato con Recharts che  rappresenta un mock del confronto dei redditi della settimana attuale e di quella precedente. Interagendo coi buttons/badges è possibile vedere il dettaglio di ciascuna sezione della resume e di ogni task della to-Do list.
 </p>
 
 <h2>🚀 Demo</h2>
