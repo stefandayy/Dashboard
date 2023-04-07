@@ -13,7 +13,7 @@ I dati presenti nell'homepage sono stati integrati tramite props da un unico fil
 
 [https://dashboard-stefandayy.vercel.app/](https://dashboard-stefandayy.vercel.app/)
 
-<h2>Project Screenshots:</h2>
+<h2>Project Screenshot:</h2>
 
 <img src="https://i.imgur.com/Tpxsx8P.png" alt="project-screenshot" width="800" height="400/">
 
